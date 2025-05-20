@@ -29,15 +29,15 @@ pc = Pinecone()
 
 index_name = "ragchatbot"
 
-pc.create_index(
-    name=index_name,
-    dimension=1536, # Replace with your model dimensions
-    metric="cosine", # Replace with your model metric
-    spec=ServerlessSpec(
-        cloud="aws",
-        region="us-east-1"
-    ) 
-)
+# pc.create_index(
+#     name=index_name,
+#     dimension=1536, # Replace with your model dimensions
+#     metric="cosine", # Replace with your model metric
+#     spec=ServerlessSpec(
+#         cloud="aws",
+#         region="us-east-1"
+#     ) 
+# )
 
 index=pc.Index(index_name)
 
